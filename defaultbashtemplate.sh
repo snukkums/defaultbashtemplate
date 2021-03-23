@@ -22,7 +22,7 @@ MIT()
    echo ''
    echo 'Permission is hereby granted, free of charge, to any person obtaining a'
    echo 'copy of this software and associated documentation files (the "Software"), '
-   echo 'to deal in the Software without echo ' restriction, including without' '
+   echo 'to deal in the Software without restriction, including without'
    echo 'limitation the rights to use, copy, modify, merge, publish, distribute,'
    echo 'sublicense, and/or sell copies of the Software, and to permit persons to'
    echo 'whom echo the Software is furnished to do so, subject to the following'
