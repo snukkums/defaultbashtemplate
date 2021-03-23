@@ -1,38 +1,43 @@
 #!/bin/bash
 ################################################################################
-#                              scriptTemplate                                  #
-#                                                                              #
-# Use this template as the beginning of a new program. Place a short           #
-# description of the script here.                                              #
-#                                                                              #
-# Change History                                                               #
-# 04/18/2020  David Weaver  Original code. This is a template for creating     #
-#                           new Bash shell scripts.                            #
-#                           Add new history entries as needed.                 #
-#                                                                              #
-#                                                                              #
+#                              scriptTemplate                                  
+#                                                                              
+# Use this template as the beginning of a new program. Place a short           
+# description of the script here.                                              
+#                                                                              
+# Change History                                                               
+# 03/22/2021  David Weaver  Original code. This is a template for creating     
+#                           new Bash shell scripts.                            
+#                           Add new history entries as needed.                 
+#                                                                              
+#                                                                              
 ################################################################################
 ################################################################################
 ################################################################################
-GPL()
+MIT()
 {
-  # display GPL
+  # display MIT License
    echo 'Copyright (C) 2021, David Weaver'
    echo 'email@email.org'
    echo ''
-   echo 'This program is free software; you can redistribute it and/or modify'
-   echo 'it under the terms of the GNU General Public License as published by'
-   echo 'the Free Software Foundation; either version 2 of the License, or'
-   echo '(at your option) any later version.'
-   echo ''
-   echo 'This program is distributed in the hope that it will be useful, but WITHOUT'
-   echo 'ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or'
-   echo 'FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License'
-   echo 'for more details.'
-   echo ''
-   echo 'You should have received a copy of the GNU General Public License along'
-   echo 'with this program; if not, write to the Free Software Foundation, Inc.,'
-   echo '59 Temple Place, Suite 330, Boston, MA  02111-1307  USA'
+   echo 'Permission is hereby granted, free of charge, to any person obtaining a'
+   echo 'copy of this software and associated documentation files (the "Software"), '
+   echo 'to deal in the Software without echo ' restriction, including without' '
+   echo 'limitation the rights to use, copy, modify, merge, publish, distribute,'
+   echo 'sublicense, and/or sell copies of the Software, and to permit persons to'
+   echo 'whom echo the Software is furnished to do so, subject to the following'
+   echo 'conditions:'
+
+   echo 'The above copyright notice and this permission notice shall be'
+   echo 'included in all copies or substantial portions of the Software.'
+
+   echo 'THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS'
+   echo 'OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF'
+   echo 'MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.'
+   echo 'IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY'
+   echo 'CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, '
+   echo 'TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE'
+   echo 'SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.'
    echo
 }
 ################################################################################
@@ -53,7 +58,7 @@ Help()
    echo
    echo "Syntax: scriptTemplate [-g|h|v|V]"
    echo "options:"
-   echo "g     Print the GPL license notification."
+   echo "L     Print the MIT license notification."
    echo "h     Print this Help."
    echo "v     Verbose mode."
    echo "V     Print software version and exit."
@@ -93,8 +98,8 @@ while getopts ":hgvV" option; do
       h) # display Help
          Help
          exit;;
-      g) # display gpl license info
-	 GPL
+      L) # display MIT license info
+	 MIT
 	 exit;;
       v) # verbose
          verbose
